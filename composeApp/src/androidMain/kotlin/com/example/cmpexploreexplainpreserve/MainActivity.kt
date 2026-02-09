@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.remember
-import com.example.cmpexploreexplainpreserve.dataStore.createDataStorePreferences
+import com.example.cmpexploreexplainpreserve.dataStorePref.createDataStorePreferences
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

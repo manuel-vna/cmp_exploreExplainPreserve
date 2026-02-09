@@ -1,4 +1,4 @@
-package com.example.cmpexploreexplainpreserve.dataStore
+package com.example.cmpexploreexplainpreserve.dataStorePref
 
 import android.content.Context
 import androidx.datastore.core.DataStore

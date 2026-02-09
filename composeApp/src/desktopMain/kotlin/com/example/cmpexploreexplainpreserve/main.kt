@@ -2,8 +2,8 @@ package com.example.cmpexploreexplainpreserve
 
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
-import com.example.cmpexploreexplainpreserve.dataStore.DATA_STORE_FILE_NAME
-import com.example.cmpexploreexplainpreserve.dataStore.createDataStorePreferences
+import com.example.cmpexploreexplainpreserve.dataStorePref.DATA_STORE_FILE_NAME
+import com.example.cmpexploreexplainpreserve.dataStorePref.createDataStorePreferences
 
 fun main() {
 

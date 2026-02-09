@@ -1,4 +1,4 @@
-package com.example.cmpexploreexplainpreserve.dataStore
+package com.example.cmpexploreexplainpreserve.dataStorePref
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.PreferenceDataStoreFactory
