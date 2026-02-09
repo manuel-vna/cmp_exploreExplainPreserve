@@ -47,6 +47,9 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            implementation(libs.navigation3.ui)
+            implementation(libs.navigation3.material3)
+            implementation(libs.serialization)
 
             api(libs.datastore.preferences)
             api(libs.datastore)
