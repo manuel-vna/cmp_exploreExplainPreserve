@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.remember
 import com.example.cmpexploreexplainpreserve.dataStorePref.createDataStorePreferences
+import com.example.cmpexploreexplainpreserve.navigation3.AppNavigation
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

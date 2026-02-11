@@ -1,4 +1,4 @@
-package com.example.cmpexploreexplainpreserve
+package com.example.cmpexploreexplainpreserve.navigation3
 
 import androidx.compose.runtime.Composable
 import androidx.datastore.core.DataStore
@@ -8,9 +8,8 @@ import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.ui.NavDisplay
 import androidx.savedstate.serialization.SavedStateConfiguration
+import com.example.cmpexploreexplainpreserve.HomeScreen
 import com.example.cmpexploreexplainpreserve.dataStorePref.DataStoreScreen
-import com.example.cmpexploreexplainpreserve.navigation3.DataStoreRoute
-import com.example.cmpexploreexplainpreserve.navigation3.HomeRoute
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 import kotlinx.serialization.modules.subclass
