@@ -16,7 +16,7 @@ fun main() {
             onCloseRequest = ::exitApplication,
             title = "cmp_exploreExplainPreserve",
         ) {
-            App(
+            AppNavigation(
                 prefs = prefs
             )
         }

@@ -1,11 +1,14 @@
 package com.example.cmpexploreexplainpreserve
 
 import androidx.compose.runtime.Composable
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
 import androidx.navigation3.runtime.NavKey
 import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.ui.NavDisplay
 import androidx.savedstate.serialization.SavedStateConfiguration
+import com.example.cmpexploreexplainpreserve.dataStorePref.DataStoreScreen
 import com.example.cmpexploreexplainpreserve.navigation3.DataStoreRoute
 import com.example.cmpexploreexplainpreserve.navigation3.HomeRoute
 import kotlinx.serialization.modules.SerializersModule
@@ -14,7 +17,9 @@ import kotlinx.serialization.modules.subclass
 
 
 @Composable
-fun AppNavigation() {
+fun AppNavigation(
+    prefs: DataStore<Preferences>
+) {
 
     val mySerializersModule = SerializersModule {
         polymorphic(NavKey::class) {
@@ -37,7 +42,14 @@ fun AppNavigation() {
         onBack = { backStack.removeLastOrNull() },
         entryProvider = entryProvider {
             entry<HomeRoute> {
-                HomeScreen()
+                HomeScreen(
+                    onDataStoreNavigation = {
+                        backStack.add(DataStoreRoute)
+                    }
+                )
+            }
+            entry<DataStoreRoute> {
+                DataStoreScreen(prefs)
             }
 
         }
