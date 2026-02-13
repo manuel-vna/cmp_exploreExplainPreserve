@@ -20,8 +20,10 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import cmp_exploreexplainpreserve.composeapp.generated.resources.Res
 import cmp_exploreexplainpreserve.composeapp.generated.resources.compose_multiplatform
+import cmp_exploreexplainpreserve.composeapp.generated.resources.dataStoreHeadline
 import com.example.cmpexploreexplainpreserve.Greeting
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun DataStoreScreen(
@@ -38,6 +40,11 @@ fun DataStoreScreen(
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
+
+        Text(
+            text = stringResource(resource = Res.string.dataStoreHeadline)
+        )
+
         Button(onClick = {
             showContent = !showContent
 
