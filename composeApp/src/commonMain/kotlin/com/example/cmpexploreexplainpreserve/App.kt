@@ -30,7 +30,7 @@ fun App(
 ) {
 
     val viewModel = DataStorePrefViewModel(prefs)
-    val randomNumberPref by viewModel.randomNumberPref.collectAsStateWithLifecycle()
+    val randomNumberPref by viewModel.favouriteNumberPref.collectAsStateWithLifecycle()
     var randomNumber: Int
 
     MaterialTheme {
