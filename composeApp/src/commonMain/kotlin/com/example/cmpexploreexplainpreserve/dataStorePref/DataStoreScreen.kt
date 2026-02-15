@@ -55,7 +55,7 @@ fun DataStoreScreen(
         )
 
         Text(
-            text = "Current Value: ${favouriteNumberPref ?: ""}"
+            text = "Current Value: $favouriteNumberPref"
         )
 
     }

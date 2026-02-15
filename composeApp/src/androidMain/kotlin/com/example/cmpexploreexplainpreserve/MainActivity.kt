@@ -5,7 +5,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.remember
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.cmpexploreexplainpreserve.dataStorePref.createDataStorePreferences
 import com.example.cmpexploreexplainpreserve.navigation3.AppNavigation
 
@@ -21,6 +23,14 @@ class MainActivity : ComponentActivity() {
                         createDataStorePreferences(applicationContext)
                     }
                 )
+
+                val lifecycleOwner = LocalLifecycleOwner.current
+
+                DisposableEffect(lifecycleOwner) {
+
+                }
+
+
             }
         }
     }
