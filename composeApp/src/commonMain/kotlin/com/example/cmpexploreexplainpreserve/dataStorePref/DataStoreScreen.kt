@@ -33,7 +33,7 @@ fun DataStoreScreen(
         kotlinx.coroutines.delay(debounceMillis)
 
         // If `text` hasn't changed during the delay, call the callback
-        viewModel.onDebouncedInput() //favouriteNumber)
+        viewModel.onDebouncedInput()
     }
 
     Column(
