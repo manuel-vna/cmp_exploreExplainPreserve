@@ -10,6 +10,7 @@ import androidx.navigation3.ui.NavDisplay
 import androidx.savedstate.serialization.SavedStateConfiguration
 import com.example.cmpexploreexplainpreserve.HomeScreen
 import com.example.cmpexploreexplainpreserve.dataStorePref.DataStoreScreen
+import com.example.cmpexploreexplainpreserve.room.ExampleDatabaseScreen
 import kotlinx.serialization.modules.SerializersModule
 import kotlinx.serialization.modules.polymorphic
 import kotlinx.serialization.modules.subclass
@@ -24,6 +25,7 @@ fun AppNavigation(
         polymorphic(NavKey::class) {
             subclass(HomeRoute::class)
             subclass(DataStoreRoute::class)
+            subclass(ExampleDatabaseRoute::class)
         }
     }
 
@@ -44,11 +46,17 @@ fun AppNavigation(
                 HomeScreen(
                     onDataStoreNavigation = {
                         backStack.add(DataStoreRoute)
+                    },
+                    onExampleDatabaseNavigation = {
+                        backStack.add(ExampleDatabaseRoute)
                     }
                 )
             }
             entry<DataStoreRoute> {
                 DataStoreScreen(prefs)
+            }
+            entry<ExampleDatabaseRoute> {
+                ExampleDatabaseScreen()
             }
 
         }
