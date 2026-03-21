@@ -20,7 +20,14 @@ The exact location depends on the platform:
 
 ## Room Database
 
+In Progress
+<pre> com/example/cmpexploreexplainpreserve/room </pre>
+
+***
+
+## Notifications
+
 Planned
-<pre> ToDo </pre>
+<pre> To Do </pre>
 
 ***
