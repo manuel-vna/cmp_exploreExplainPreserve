@@ -27,7 +27,7 @@ The database, data and DAO definitions are shared on commonMain
 
 ***
 
-## Notifications
+## Local Notifications
 
 Planned
 <pre> To Do </pre>
