@@ -20,7 +20,9 @@ The exact location depends on the platform:
 
 ## Room Database
 
-In Progress
+Each platform has a custom DatabaseBuilder.
+The database, data and DAO definitions are shared on commonMain
+
 <pre> com/example/cmpexploreexplainpreserve/room </pre>
 
 ***
