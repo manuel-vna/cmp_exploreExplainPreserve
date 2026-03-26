@@ -29,7 +29,9 @@ The database, data and DAO definitions are shared on commonMain
 
 ## Local Notifications
 
-Planned
-<pre> To Do </pre>
+Since notifications are rather different on Android and iOs the implementation of local
+notification consists of mainly platform specific code.
+
+<pre> com/example/cmpexploreexplainpreserve/notifications </pre>
 
 ***
