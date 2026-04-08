@@ -1,5 +1,12 @@
 # Implementations
 
+## Document Scanner
+
+Uses MLKit to scan documents and extract text.
+<pre> com/example/cmpexploreexplainpreserve/documentScanner </pre>
+
+***
+
 ## Navigation 3
 
 Backstack based handling of navigations
