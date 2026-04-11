@@ -1,8 +1,15 @@
+# About the project
+
+This project is meant for exploring new technologies within the Compose Multiplatform environment,
+explaining these to myself in simple examples and preserving the results for future use cases.
+
 # Implementations
 
 ## Document Scanner
 
-Uses MLKit to scan documents and extract text.
+Uses MLKit to scan documents with the phone camera, being able to edit them
+and finally save them in PDF format.
+
 <pre> com/example/cmpexploreexplainpreserve/documentScanner </pre>
 
 ***
