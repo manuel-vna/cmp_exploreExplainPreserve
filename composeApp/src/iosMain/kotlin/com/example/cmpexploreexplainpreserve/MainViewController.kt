@@ -12,6 +12,7 @@ fun MainViewController() = ComposeUIViewController {
     AppNavigation(
         prefs = remember {
             createDataStorePreferences()
-        }
+        },
+        onScan = { println("Not supported on this platform yet") }
     )
 }

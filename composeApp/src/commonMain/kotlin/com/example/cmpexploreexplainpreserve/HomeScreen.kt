@@ -12,7 +12,8 @@ import androidx.compose.ui.Modifier
 @Composable
 fun HomeScreen(
     onDataStoreNavigation: () -> Unit,
-    onExampleDatabaseNavigation: () -> Unit
+    onExampleDatabaseNavigation: () -> Unit,
+    onScan: () -> Unit
 ) {
 
     Column(
@@ -20,6 +21,12 @@ fun HomeScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Button(
+            onClick = {
+                onScan()
+            },
+            content = { Text("Document Scanner") }
+        )
         Button(
             onClick = {
                 onDataStoreNavigation()

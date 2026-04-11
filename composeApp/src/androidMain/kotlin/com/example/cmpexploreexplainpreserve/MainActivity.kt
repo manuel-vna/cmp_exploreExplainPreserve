@@ -11,6 +11,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.cmpexploreexplainpreserve.dataStorePref.createDataStorePreferences
+import com.example.cmpexploreexplainpreserve.documentScanner.AndroidDocumentScanner
 import com.example.cmpexploreexplainpreserve.navigation3.AppNavigation
 
 class MainActivity : ComponentActivity() {
@@ -18,11 +19,16 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
 
+        val documentScanner = AndroidDocumentScanner(this)
+
         setContent {
             MaterialTheme {
                 AppNavigation(
                     prefs = remember {
                         createDataStorePreferences(applicationContext)
+                    },
+                    onScan = {
+                        documentScanner.scan()
                     }
                 )
 

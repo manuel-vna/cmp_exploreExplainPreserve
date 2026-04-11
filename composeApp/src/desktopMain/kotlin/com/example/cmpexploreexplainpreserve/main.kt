@@ -21,7 +21,8 @@ fun main() {
             title = "cmp_exploreExplainPreserve",
         ) {
             AppNavigation(
-                prefs = prefs
+                prefs = prefs,
+                onScan = { println("Not supported on this platform") }
             )
         }
     }

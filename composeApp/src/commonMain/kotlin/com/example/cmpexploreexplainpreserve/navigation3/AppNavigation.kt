@@ -18,7 +18,8 @@ import kotlinx.serialization.modules.subclass
 
 @Composable
 fun AppNavigation(
-    prefs: DataStore<Preferences>
+    prefs: DataStore<Preferences>,
+    onScan: () -> Unit
 ) {
 
     val mySerializersModule = SerializersModule {
@@ -49,6 +50,9 @@ fun AppNavigation(
                     },
                     onExampleDatabaseNavigation = {
                         backStack.add(ExampleDatabaseRoute)
+                    },
+                    onScan = {
+                        onScan()
                     }
                 )
             }
